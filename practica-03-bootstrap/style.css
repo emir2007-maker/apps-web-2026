@@ -1,0 +1,95 @@
+/* ================================
+   PETTASK - RF-002
+   Estilos personalizados
+   ================================ */
+
+/* Paleta de colores */
+:root {
+    --color-fondo: #E5EAF5;
+    --color-rosa: #FF6F82;
+    --color-azul: #557FFC;
+    --color-azul-oscuro: #1E1E50;
+    --color-blanco: #FFFFFF;
+}
+
+/* Configuración general */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-azul-oscuro);
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: var(--color-azul-oscuro);
+}
+
+.navbar-brand {
+    color: var(--color-blanco) !important;
+    font-weight: bold;
+}
+
+/* Tarjeta del formulario */
+.card {
+    background-color: var(--color-blanco);
+    border: none;
+    border-radius: 15px;
+}
+
+/* Títulos */
+.titulo {
+    color: var(--color-azul-oscuro);
+}
+
+.texto {
+    color: var(--color-azul-oscuro);
+}
+
+/* Mensaje informativo */
+.alerta {
+    background-color: var(--color-fondo);
+    color: var(--color-azul-oscuro);
+    border: none;
+}
+
+/* Botón principal */
+.btn-registrarse {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    border: none;
+}
+
+.btn-registrarse:hover {
+    background-color: var(--color-rosa);
+    color: var(--color-blanco);
+}
+
+/* Botón secundario */
+.btn-informacion {
+    color: var(--color-azul);
+    border-color: var(--color-azul);
+}
+
+.btn-informacion:hover {
+    background-color: var(--color-rosa);
+    border-color: var(--color-rosa);
+    color: var(--color-blanco);
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 576px) {
+
+    .card-body {
+        padding: 1.5rem !important;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+}

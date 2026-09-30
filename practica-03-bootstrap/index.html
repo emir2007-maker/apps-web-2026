@@ -5,90 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Registro - PetTask</title>
+    <title>PetTask - Registro</title>
 
     <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet">
 
-    <style>
-
-        body {
-            background-color: #E5EAF5;
-            color: #1E1E50;
-        }
-
-        .navbar {
-            background-color: #1E1E50;
-        }
-
-        .navbar-brand {
-            color: #FFFFFF !important;
-        }
-
-        .card {
-            background-color: #FFFFFF;
-            border: none;
-            border-radius: 15px;
-        }
-
-        .titulo {
-            color: #1E1E50;
-        }
-
-        .texto {
-            color: #1E1E50;
-        }
-
-        .btn-registrarse {
-            background-color: #557FFC;
-            color: #FFFFFF;
-            border: none;
-        }
-
-        .btn-registrarse:hover {
-            background-color: #FF6F82;
-            color: #FFFFFF;
-        }
-
-        .alerta {
-            background-color: #E5EAF5;
-            color: #1E1E50;
-            border: none;
-        }
-
-        footer {
-            background-color: #1E1E50;
-            color: #FFFFFF;
-        }
-
-    </style>
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css">s
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark">
         <div class="container">
-            <span class="navbar-brand">
+            <a class="navbar-brand" href="#">
                 PetTask
-            </span>
+            </a>
         </div>
     </nav>
 
 
-    <!-- Contenido principal -->
+    <!-- CONTENIDO PRINCIPAL -->
     <main class="container py-5">
 
         <div class="row justify-content-center">
 
             <div class="col-12 col-md-8 col-lg-6">
 
-                <!-- Card -->
+                <!-- CARD -->
                 <div class="card shadow">
 
                     <div class="card-body p-4">
 
-                        <h1 class="text-center mb-3 titulo">
+                        <h1 class="text-center titulo mb-3">
                             Crear cuenta
                         </h1>
 
@@ -97,16 +49,16 @@
                         </p>
 
 
-                        <!-- Alert -->
+                        <!-- ALERT -->
                         <div class="alert alerta" role="alert">
                             Completa los datos para crear tu cuenta.
                         </div>
 
 
-                        <!-- Formulario -->
+                        <!-- FORMULARIO -->
                         <form>
 
-                            <!-- Usuario -->
+                            <!-- USUARIO -->
                             <div class="mb-3">
 
                                 <label for="usuario" class="form-label">
@@ -123,7 +75,7 @@
                             </div>
 
 
-                            <!-- Contraseña -->
+                            <!-- CONTRASEÑA -->
                             <div class="mb-3">
 
                                 <label for="password" class="form-label">
@@ -140,7 +92,7 @@
                             </div>
 
 
-                            <!-- Confirmar contraseña -->
+                            <!-- CONFIRMAR CONTRASEÑA -->
                             <div class="mb-4">
 
                                 <label for="confirmarPassword" class="form-label">
@@ -157,7 +109,7 @@
                             </div>
 
 
-                            <!-- Botón -->
+                            <!-- BOTÓN REGISTRARSE -->
                             <div class="d-grid">
 
                                 <button
@@ -181,62 +133,65 @@
     </main>
 
 
-    <!-- Footer --><!-- Botón para abrir el Modal -->
-<div class="text-center mb-4">
+    <!-- BOTÓN PARA MODAL -->
+    <div class="container text-center mb-5">
 
-    <button
-        type="button"
-        class="btn btn-outline-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#modalRegistro">
-        Ver información
-    </button>
+        <button
+            type="button"
+            class="btn btn-informacion"
+            data-bs-toggle="modal"
+            data-bs-target="#modalRegistro">
+            Ver información
+        </button>
 
-</div>
+    </div>
 
 
-<!-- Modal -->
-<div
-    class="modal fade"
-    id="modalRegistro"
-    tabindex="-1"
-    aria-labelledby="modalRegistroLabel"
-    aria-hidden="true">
+    <!-- MODAL -->
+    <div
+        class="modal fade"
+        id="modalRegistro"
+        tabindex="-1"
+        aria-labelledby="modalRegistroLabel"
+        aria-hidden="true">
 
-    <div class="modal-dialog">
+        <div class="modal-dialog">
 
-        <div class="modal-content">
+            <div class="modal-content">
 
-            <div class="modal-header">
+                <div class="modal-header">
 
-                <h5 class="modal-title" id="modalRegistroLabel">
-                    Registro de usuario
-                </h5>
+                    <h5 class="modal-title" id="modalRegistroLabel">
+                        Registro de usuario
+                    </h5>
 
-                <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Cerrar">
-                </button>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar">
+                    </button>
 
-            </div>
+                </div>
 
-            <div class="modal-body">
+                <div class="modal-body">
 
-                El RF-002 permite al usuario crear una cuenta
-                proporcionando un usuario y una contraseña válidos.
+                    El RF-002 permite al usuario proporcionar
+                    un usuario y una contraseña válidos para
+                    crear una cuenta.
 
-            </div>
+                </div>
 
-            <div class="modal-footer">
+                <div class="modal-footer">
 
-                <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal">
-                    Cerrar
-                </button>
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+
+                </div>
 
             </div>
 
@@ -244,18 +199,21 @@
 
     </div>
 
-</div>
+
+    <!-- FOOTER -->
     <footer class="text-center py-3">
 
         <p class="mb-0">
-            PetTask - Práctica de Bootstrap 5 - RF-002
+            PetTask - RF-002 - Bootstrap 5
         </p>
 
     </footer>
 
 
     <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
 
 </body>
 
