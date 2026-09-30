@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro - PetTask</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body {
+            background-color: #E5EAF5;
+            color: #1E1E50;
+        }
+
+        .navbar {
+            background-color: #1E1E50;
+        }
+
+        .navbar-brand {
+            color: #FFFFFF !important;
+        }
+
+        .card {
+            background-color: #FFFFFF;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .titulo {
+            color: #1E1E50;
+        }
+
+        .texto {
+            color: #1E1E50;
+        }
+
+        .btn-registrarse {
+            background-color: #557FFC;
+            color: #FFFFFF;
+            border: none;
+        }
+
+        .btn-registrarse:hover {
+            background-color: #FF6F82;
+            color: #FFFFFF;
+        }
+
+        .alerta {
+            background-color: #E5EAF5;
+            color: #1E1E50;
+            border: none;
+        }
+
+        footer {
+            background-color: #1E1E50;
+            color: #FFFFFF;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <span class="navbar-brand">
+                PetTask
+            </span>
+        </div>
+    </nav>
+
+
+    <!-- Contenido principal -->
+    <main class="container py-5">
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-8 col-lg-6">
+
+                <!-- Card -->
+                <div class="card shadow">
+
+                    <div class="card-body p-4">
+
+                        <h1 class="text-center mb-3 titulo">
+                            Crear cuenta
+                        </h1>
+
+                        <p class="text-center texto mb-4">
+                            RF-002 — Registrarse
+                        </p>
+
+
+                        <!-- Alert -->
+                        <div class="alert alerta" role="alert">
+                            Completa los datos para crear tu cuenta.
+                        </div>
+
+
+                        <!-- Formulario -->
+                        <form>
+
+                            <!-- Usuario -->
+                            <div class="mb-3">
+
+                                <label for="usuario" class="form-label">
+                                    Usuario
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="usuario"
+                                    placeholder="Ingresa tu usuario"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Contraseña -->
+                            <div class="mb-3">
+
+                                <label for="password" class="form-label">
+                                    Contraseña
+                                </label>
+
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="password"
+                                    placeholder="Ingresa tu contraseña"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Confirmar contraseña -->
+                            <div class="mb-4">
+
+                                <label for="confirmarPassword" class="form-label">
+                                    Confirmar contraseña
+                                </label>
+
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="confirmarPassword"
+                                    placeholder="Confirma tu contraseña"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Botón -->
+                            <div class="d-grid">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-registrarse">
+                                    Registrarse
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer --><!-- Botón para abrir el Modal -->
+<div class="text-center mb-4">
+
+    <button
+        type="button"
+        class="btn btn-outline-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modalRegistro">
+        Ver información
+    </button>
+
+</div>
+
+
+<!-- Modal -->
+<div
+    class="modal fade"
+    id="modalRegistro"
+    tabindex="-1"
+    aria-labelledby="modalRegistroLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title" id="modalRegistroLabel">
+                    Registro de usuario
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                El RF-002 permite al usuario crear una cuenta
+                proporcionando un usuario y una contraseña válidos.
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                    Cerrar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    <footer class="text-center py-3">
+
+        <p class="mb-0">
+            PetTask - Práctica de Bootstrap 5 - RF-002
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
